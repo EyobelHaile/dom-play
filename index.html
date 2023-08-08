@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-     <title>Title Goes Here</title>
+     <title>The ant and the Grasshopper. A warm summer day</title>
   <meta charset="utf-8" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/nav.css" />
+  <style>
+    .hamlet{
+       /* background-color: yellow; */
+    } 
+    #play span{
+      background-color: yellow;
+    }
+
+
+  </style>
  </head>
  <body>
      <header>
-     <h1>Title Goes Here</h1>
+     <h1>The ant and the Grasshopper. A warm summer day</h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
-            <a href="#" target="_blank">Name of project goes here</a>
+            <a href="#" target="_blank">Dom Play</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
      </header>
      
    <main class="wrapper">
-    <p>Content goes here</p>
-     <footer>
-      <p><small>&copy; 2021 by 
-          YOUR NAME HERE, All Rights Reserved ~ 
+      <div id="play">
+          <p><span data-actor="Grasshopper">Grasshopper: It is fun int he sun. I can sing. I can dance</span></p>
+          <p><span data-actor="Ant">Ant: Who are you?</span></p>
+          <p><span data-actor="Grasshopper">Grasshopper: I am a grasshopper. Who are you?</span></p>
+          <p><span data-actor="Ant">Ant: I am an ant. Why do you sing? Why do you dance?</span></p>
+          <p><span data-actor="Grasshopper">Grasshopper: It's fun to sing and dance</span></p>
+          <p>On this stage, you have actors who deliver their lines. Each actor has their own set of cards with their lines written on them. The lines are spread out on the stage.
+            Now, let's say you want to highlight all the lines for a specific actor. To do this, you simply need to click on one of the actor's cards. When you click on the card, all the other cards on the stage belonging to different actors will become un-highlighted, while the cards belonging to the selected actor will be highlighted.
+            Behind the scenes, the web page uses JavaScript, a programming language, to make this happen. JavaScript acts as the director, listening for the click event on the cards. When a card is clicked, JavaScript identifies the actor associated with that card and applies the appropriate styling to highlight their lines. At the same time, it removes the highlighting from the lines of other actors.</p>
+      </div>
+    <footer>
+      <p><small>&copy; 2023 by 
+          Bella Haile, All Rights Reserved ~ 
           <a id="html-checker" href="#">Check HTML</a> ~ 
           <a id="css-checker" href="#">Check CSS</a></small>
      </p>
     </footer>
   </main>
   <script src="js/main.js"></script>
+  <script src="js/dom-play.js"></script>
  </body>
 </html>
